@@ -5,13 +5,15 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 	<title>JavaScript Calculator</title>
+
 	<!-- Favicon 
 	**************************************** -->
 	<link rel="icon" type="image/png" href="git-branch.png" />
-	<!-- Font Awesome CDN 6.0.0
+	<!-- Bootstrap CSS CDN v5.1.3 
 	**************************************** -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<!-- My CSS stylesheet
     ***************************************** -->
 	<link rel="stylesheet" href="style.css" />
@@ -21,43 +23,53 @@
 
 	<!-- Calculator container -->
 	<div class="calculator">
-	
+
 		<!-- Calculator Display -->
 		<div class="calculator-display">
-			<h1 class="display">0</h1>
+			<h1 class="display" id="display">0</h1>
 		</div>
 		<!-- End of Calculator Display -->
 
 		<!-- Calculator Buttons -->
 		<div class="calculator-buttons">
-			<button class="operator" value="+">+</button>
-			<button class="operator" value="-">-</button>
-			<button class="operator" value="*">×</button>
-			<button class="operator" value="/">÷</button>
-			<button value="7">7</button>
-			<button value="8">8</button>
-			<button value="9">9</button>
-			<button value="4">4</button>
-			<button value="5">5</button>
-			<button value="6">6</button>
-			<button value="1">1</button>
-			<button value="2">2</button>
-			<button value="3">3</button>
-			<button class="decimal" value=".">.</button>
-			<button value="0">0</button>
-			<button class="clear" id="clear-btn" value="c">C</button>
-			<button class="equal-sign operator" value="=">=</button>
+			<button class="operator" id="add" value="+">+</button>
+			<button class="operator" id="subtract" value="-">-</button>
+			<button class="operator" id="multiply" value="*">×</button>
+			<button class="operator" id="divide" value="/">÷</button>
+			<button value="7" id="seven">7</button>
+			<button value="8" id="eight">8</button>
+			<button value="9" id="nine">9</button>
+			<button value="4" id="four">4</button>
+			<button value="5" id="five">5</button>
+			<button value="6" id="six">6</button>
+			<button value="1" id="one">1</button>
+			<button value="2" id="two">2</button>
+			<button value="3" id="three">3</button>
+			<button class="decimal" id="decimal" value=".">.</button>
+			<button value="0" id="zero">0</button>
+			<button class="clear" id="clear" value="c">C</button>
+			<button class="equal-sign operator" id="equals" value="=">=</button>
 		</div>
 		<!-- End of Calculator Buttons -->
 	</div>
 	<!-- End of Calculator container -->
 
+	<!--  Footer
+		***************************************** -->
+		<footer class=" w-100 position-fixed bg-dark-transparent bottom-0 text-center text-dark h6">
+			<small class="col">&copy; 2022 | By Zebla MF </small>
+			</footer>
+			<!-- End of Footer
+				***************************************** -->
 
 	<!-- My Script -->
 	<script src="script.js"></script>
 
+	<!-- Bootstrap JS CDN (Bundle) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 	<!-- FreeCodeCamp CDN script test-->
-	<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
