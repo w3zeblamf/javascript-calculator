@@ -1,0 +1,132 @@
+/* Common style */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+/* Calculator container  */
+.calculator {
+  background:  #d6d6d6;
+  width: 400px;
+  box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
+
+}
+
+/* Display */
+.calculator-display {
+  background: black;
+  color: white;
+  margin: 15px 15px 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator-display h1{
+  margin: 20px;
+  padding: 5px 15px 5px 5px;
+  background: #003748;
+  border: 3px solid #d6d6d6;
+  width: 315px;
+  text-align: right;
+  font-size: 45px;
+  font-family: 'Lucida Console', sans-serif;
+  font-weight: 200;
+  overflow-x: auto;
+}
+/* Display Scrollbar Style */
+/* https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 
+
+/* Calculator buttons */
+.calculator-buttons {
+  display:  grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  padding: 20px;
+  margin: 15px 15px 20px 15px;
+  background: white ;
+  border: 1px solid #444444;
+}
+
+.operator {
+  font-size: 32px;
+  background: #444444;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #606060;
+}
+
+button {
+  min-height: 50px;
+  border: 1px solid #444444;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: rgb(199, 199, 199);
+
+}
+
+button:hover {
+background-color: #ebebeb
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus {
+border: none;
+}
+
+.clear  {
+  background: #ef2721;
+  color: white;
+}
+
+.clear:hover {
+  background-color: #ff5d55;
+}
+
+.equal-sign {
+  grid-column: -2;
+  grid-row: 2 / span 4;
+  background: #55a42c;
+}
+
+.equal-sign:hover {
+  background-color: #72bb53;
+}
+
+
+/* Media Query: Large Smartphone (Vertical)*/
+
+@media screen and (max-width: 600px) {
+  .calculator {
+    width: 95%;
+  }
+}
